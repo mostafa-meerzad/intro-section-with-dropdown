@@ -82,6 +82,12 @@ main .btn:active {
   display: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1200px) {
   nav {
     margin-top: 1rem;
@@ -181,9 +187,6 @@ main .btn:active {
     top: 1.3rem;
   }
   main footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
     bottom: -24%;
   }
@@ -195,12 +198,12 @@ main .btn:active {
   }
 
   nav {
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
+    padding-top: 0.5rem;
   }
   nav .menu {
-    display: none;
+    right: -1rem;
   }
   nav .menu-close svg {
     display: block;
@@ -212,6 +215,7 @@ main .btn:active {
     font-size: 1.1rem;
   }
   nav > ul {
+    display: none;
     border: 1px solid;
     position: absolute;
     right: 0;
@@ -246,5 +250,51 @@ main .btn:active {
     width: 70%;
     text-align: center;
     padding: 0.6rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+  main .design-img {
+    margin-top: 1.5rem;
+    height: 45vh;
+    width: auto;
+    background-image: url("../images/image-hero-mobile.png");
+    order: -1;
+    background-size: cover;
+  }
+  main .main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  main .main-content header {
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+  main .main-content header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  main .main-content .content {
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  footer svg {
+    width: 5rem;
+  }
+  footer svg:nth-child(2) {
+    width: 3.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */

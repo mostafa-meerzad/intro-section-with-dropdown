@@ -95,6 +95,11 @@ main {
 .disable {
   display: none;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (min-width: 1200px) {
   nav {
@@ -213,9 +218,6 @@ main {
       }
     }
     footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 2rem;
       bottom: -24%;
     }
@@ -228,11 +230,14 @@ main {
     margin: 0;
   }
   nav {
-    border: 1px solid;
+    // border: 1px solid;
     display: flex;
     justify-content: space-between;
+    padding-top: 0.5rem;
+
     .menu {
-      display: none;
+      // display: none;
+      right: -1rem;
     }
     .menu-close {
       // border: 1px solid;
@@ -259,7 +264,7 @@ main {
     }
 
     & > ul {
-      // display: none;
+      display: none;
       border: 1px solid;
       // margin: 0;
       position: absolute;
@@ -303,6 +308,77 @@ main {
         text-align: center;
         padding: 0.6rem;
       }
+    }
+  }
+
+  main {
+    // border: 1px solid red;
+
+    // display: flex;
+    flex-direction: column;
+
+    .design-img {
+      // border: 1px solid;
+      margin-top: 1.5rem;
+      height: 45vh;
+      width: auto;
+      background-image: url("../images/image-hero-mobile.png");
+      order: -1;
+      background-size: cover;
+      // margin: auto;
+    }
+
+    .main-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1.5rem;
+      gap: 1rem;
+      // justify-content: center;
+      // margin: ;
+      // padding: 0.58em;
+
+      header {
+        // padding: 0;
+        // border: 1px solid;
+        padding: 0;
+        margin: 0;
+        margin-top: 1.5rem;
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 700;
+          // padding: 0;
+          margin: 0;
+        }
+      }
+
+      .content {
+        // margin-top: 0rem;
+        // border: 1px solid;
+        padding: 0 clamp(1rem, 1.5rem, 9rem);
+        text-align: center;
+        // margin: 0 auto;
+      }
+    }
+  }
+
+  footer {
+    // border: 1px solid;
+    // margin: 2.5rem 0;
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    // margin: auto 2rem;
+    gap: 1.5rem;
+    width: 100%;
+    // border: 1px solid;
+    svg {
+      width: 5rem;
+      // height: 3rem;
+      // border: 1px solid;
+    }
+    svg:nth-child(2) {
+      // border: 2px solid red;
+      width: 3.8rem;
     }
   }
 }
