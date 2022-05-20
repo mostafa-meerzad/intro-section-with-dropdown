@@ -78,6 +78,10 @@ main .btn:active {
   background-color: hsl(0deg, 0%, 98%);
 }
 
+.disable {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   nav {
     margin-top: 1rem;
@@ -182,5 +186,65 @@ main .btn:active {
     align-items: center;
     gap: 2rem;
     bottom: -24%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu-close svg {
+    display: block;
+    margin-left: auto;
+  }
+  nav .nav-item {
+    margin: 0;
+    padding: 1rem 10%;
+    font-size: 1.1rem;
+  }
+  nav > ul {
+    border: 1px solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.5rem 1.7rem;
+    width: 65%;
+    height: clamp(100vh, 100vh, 100%);
+    background-color: #ddd;
+    z-index: 1;
+    list-style-type: none;
+  }
+  nav .drop-menu {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    display: none;
+  }
+  nav .drop-menu li {
+    padding: 0.3rem;
+    display: flex;
+    gap: 0.9rem;
+  }
+  nav .auth-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .auth-nav li:last-child {
+    border: 2px solid;
+    border-radius: 15px;
+    width: 70%;
+    text-align: center;
+    padding: 0.6rem;
   }
 }/*# sourceMappingURL=styles.css.map */
