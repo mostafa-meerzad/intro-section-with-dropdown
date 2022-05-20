@@ -223,7 +223,6 @@ footer {
   }
   nav > ul {
     display: none;
-    border: 1px solid;
     position: fixed;
     right: 0;
     top: 0;
@@ -232,7 +231,7 @@ footer {
     width: 65%;
     height: 100vh;
     bottom: 0;
-    background-color: #ddd;
+    background-color: white;
     z-index: 1;
     list-style-type: none;
   }
