@@ -23,8 +23,6 @@ nav {
   margin: 0;
 }
 nav .logo {
-  /*    padding-right: 3rem;
-  top: -10%; */
   margin-top: 1rem;
   margin-right: 2rem;
 }
@@ -179,9 +177,6 @@ footer {
     font-size: 4.5rem;
     display: flex;
     flex-direction: column;
-    /*    @media screen and (max-width: 1100px) {
-      font-size: 2.5rem;
-    } */
   }
   main .main-content p {
     top: -1rem;
@@ -216,10 +211,10 @@ footer {
   nav .nav-item {
     margin: 0;
     padding: 1rem 10%;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    font-size: 1.1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1rem;
   }
   nav > ul {
     display: none;
@@ -305,5 +300,16 @@ footer {
   }
   footer svg:nth-child(2) {
     width: 3.8rem;
+  }
+
+  .overlay {
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: black;
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
