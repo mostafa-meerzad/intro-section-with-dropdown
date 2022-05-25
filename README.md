@@ -35,7 +35,6 @@ Users should be able to:
 
 ![](./images/Screenshot_Mobile_Mode_With_Menu_Frontend%20Mentor%20Intro%20section%20with%20dropdown%20navigation.png )
 
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
